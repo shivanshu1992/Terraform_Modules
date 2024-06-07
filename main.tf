@@ -33,3 +33,9 @@ resource "google_compute_instance" "vm_instance" {
     subnetwork = google_compute_subnetwork.subnetwork.id
   }
 }
+
+resource "google_storage_bucket" "storage_bucket1" {
+  name          = "bucket-for-module"
+  location      = "us-west1"
+ 
+}
