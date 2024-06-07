@@ -39,3 +39,9 @@ resource "google_storage_bucket" "storage_bucket1" {
   location      = "us-west1"
  
 }
+resource "google_storage_bucket" "storage_bucket2" {
+  name          = "bucket-for-module-2"
+  location      = "us-west1"
+ 
+}
+
